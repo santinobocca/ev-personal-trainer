@@ -1,17 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emanuel Vázquez | Personal Trainer</title>
-  <meta name="description" content="Emanuel Vázquez, Personal Trainer. Rutinas personalizadas, seguimiento y acompañamiento para que desbloquees tu potencial.">
+  <title>Emanuel Vázquez | Personal Trainer en Córdoba, Argentina</title>
+  <meta name="description" content="Emanuel Vázquez, Personal Trainer certificado en Córdoba. Rutinas de entrenamiento personalizadas, seguimiento semanal y acompañamiento para bajar de peso, ganar masa muscular o mejorar tu rendimiento.">
+  <meta name="keywords" content="personal trainer Córdoba, entrenador personal, rutinas de entrenamiento personalizadas, entrenamiento online, Emanuel Vázquez">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Emanuel Vázquez">
+  <meta name="theme-color" content="#08335E">
+  <!-- Reemplazá esta URL por el dominio definitivo del sitio cuando esté publicado -->
+  <link rel="canonical" href="https://www.evpersonaltrainer.com.ar/">
+
   <link rel="icon" href="media/logo.jpeg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="media/logo.jpeg">
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Emanuel Vázquez Personal Trainer">
+  <meta property="og:title" content="Emanuel Vázquez | Personal Trainer en Córdoba, Argentina">
+  <meta property="og:description" content="Rutinas personalizadas, seguimiento y acompañamiento para que desbloquees tu potencial. Conocé mis planes de entrenamiento.">
+  <meta property="og:image" content="https://www.evpersonaltrainer.com.ar/media/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.evpersonaltrainer.com.ar/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Emanuel Vázquez | Personal Trainer en Córdoba, Argentina">
+  <meta name="twitter:description" content="Rutinas personalizadas, seguimiento y acompañamiento para que desbloquees tu potencial.">
+  <meta name="twitter:image" content="https://www.evpersonaltrainer.com.ar/media/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="media/logo.webp" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Emanuel Vázquez Personal Trainer",
+    "image": "https://www.evpersonaltrainer.com.ar/media/og-image.jpg",
+    "url": "https://www.evpersonaltrainer.com.ar/",
+    "telephone": "+5493472432823",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Córdoba",
+      "addressRegion": "Córdoba",
+      "addressCountry": "AR"
+    },
+    "areaServed": "Córdoba, Argentina",
+    "sameAs": ["https://www.instagram.com/ev_personaltrainer/"],
+    "founder": {
+      "@type": "Person",
+      "name": "Emanuel Vázquez",
+      "jobTitle": "Personal Trainer",
+      "alumniOf": "Instituto Superior de Educación Física Bell",
+      "knowsAbout": ["Diseño de rutinas de entrenamiento", "Anatomía y biomecánica", "Motivación deportiva", "Nutrición aplicada al entrenamiento"]
+    },
+    "makesOffer": [
+      { "@type": "Offer", "name": "Pack Básico Arranque", "price": "20000", "priceCurrency": "ARS" },
+      { "@type": "Offer", "name": "Pack Intermedio Progreso", "price": "40000", "priceCurrency": "ARS" },
+      { "@type": "Offer", "name": "Pack Premium Transformación", "price": "80000", "priceCurrency": "ARS" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -24,7 +80,10 @@
       </nav>
 
       <a href="#inicio" class="header-logo" aria-label="Emanuel Vázquez - Inicio">
-        <img src="media/logo.jpeg" alt="Logo Emanuel Vázquez Personal Trainer" width="96" height="96">
+        <picture>
+          <source srcset="media/logo.webp" type="image/webp">
+          <img src="media/logo.jpeg" alt="Logo Emanuel Vázquez Personal Trainer" width="96" height="96" fetchpriority="high" decoding="async">
+        </picture>
       </a>
 
       <nav class="nav nav-right" aria-label="Navegación secundaria">
@@ -89,7 +148,8 @@
           <p class="lead">
             Soy Instructor en Personal Trainer egresado del Instituto Superior de Educación Física Bell.
             Mi trabajo es acompañarte con un plan hecho a tu medida: evaluamos de dónde partís,
-            definimos a dónde querés llegar y ajustamos el camino semana a semana.
+            definimos a dónde querés llegar y ajustamos el camino semana a semana, combinando
+            conocimientos de anatomía y biomecánica con una comunicación clara y motivadora.
           </p>
 
           <ul class="services">
@@ -141,7 +201,16 @@
               <div><dt>Modalidad</dt><dd>Combinada</dd></div>
               <div><dt>Evaluación final</dt><dd>Aprobada · 2025</dd></div>
             </dl>
-            
+
+            <p class="cred-sub">Fortalezas</p>
+            <ul class="chips">
+              <li>Diseño de rutinas</li>
+              <li>Anatomía y biomecánica</li>
+              <li>Motivación y acompañamiento</li>
+              <li>Comunicación clara</li>
+              <li>Adaptabilidad y trabajo en equipo</li>
+              <li>Aprendizaje rápido</li>
+            </ul>
           </div>
 
           <div class="cred-card cred-secondary">
@@ -170,8 +239,11 @@
         <div class="plans-grid">
           <article class="plan-card">
             <button class="plan-img" data-lightbox="media/plan1.jpeg" aria-label="Ver Pack Básico Arranque en grande">
-              <img src="media/plan1.jpeg" loading="lazy" width="1080" height="1350"
-                   alt="Pack Básico Arranque, para principiantes. Incluye rutina personalizada adaptada a objetivos, videos explicativos de ejercicios, actualización cada 4 semanas y contacto por WhatsApp con respuesta en 24 a 48 horas. Precio: 20.000 pesos por mes.">
+              <picture>
+                <source srcset="media/plan1.webp" type="image/webp">
+                <img src="media/plan1.jpeg" loading="lazy" decoding="async" width="1080" height="1350"
+                     alt="Pack Básico Arranque, para principiantes. Incluye rutina personalizada adaptada a objetivos, videos explicativos de ejercicios, actualización cada 4 semanas y contacto por WhatsApp con respuesta en 24 a 48 horas. Precio: 20.000 pesos por mes.">
+              </picture>
             </button>
             <div class="plan-body">
               <p class="plan-level">Pack Básico</p>
@@ -185,8 +257,11 @@
           <article class="plan-card plan-featured">
             <span class="plan-badge">Más vendido</span>
             <button class="plan-img" data-lightbox="media/plan2.jpeg" aria-label="Ver Pack Intermedio Progreso en grande">
-              <img src="media/plan2.jpeg" loading="lazy" width="1080" height="1350"
-                   alt="Pack Intermedio Progreso, para quienes buscan resultados reales. Incluye rutina personalizada, actualización cada 3 semanas, seguimiento semanal de peso, rendimiento y fotos, WhatsApp con respuesta prioritaria en 24 horas, corrección técnica por video y guía básica de alimentación. No incluye nutrición clínica. Precio: 40.000 pesos por mes.">
+              <picture>
+                <source srcset="media/plan2.webp" type="image/webp">
+                <img src="media/plan2.jpeg" loading="lazy" decoding="async" width="1080" height="1350"
+                     alt="Pack Intermedio Progreso, para quienes buscan resultados reales. Incluye rutina personalizada, actualización cada 3 semanas, seguimiento semanal de peso, rendimiento y fotos, WhatsApp con respuesta prioritaria en 24 horas, corrección técnica por video y guía básica de alimentación. No incluye nutrición clínica. Precio: 40.000 pesos por mes.">
+              </picture>
             </button>
             <div class="plan-body">
               <p class="plan-level">Pack Intermedio</p>
@@ -199,8 +274,11 @@
 
           <article class="plan-card">
             <button class="plan-img" data-lightbox="media/plan3.jpeg" aria-label="Ver Pack Premium Transformación en grande">
-              <img src="media/plan3.jpeg" loading="lazy" width="1080" height="1350"
-                   alt="Pack Premium Transformación: aquí se venden resultados, no rutinas. Rutina personalizada avanzada, ajustes semanales, seguimiento semanal y monitoreo de tu progreso, y estrategia nutricional personalizada. Precio: 80.000 pesos por mes.">
+              <picture>
+                <source srcset="media/plan3.webp" type="image/webp">
+                <img src="media/plan3.jpeg" loading="lazy" decoding="async" width="1080" height="1350"
+                     alt="Pack Premium Transformación: aquí se venden resultados, no rutinas. Rutina personalizada avanzada, ajustes semanales, seguimiento semanal y monitoreo de tu progreso, y estrategia nutricional personalizada. Precio: 80.000 pesos por mes.">
+              </picture>
             </button>
             <div class="plan-body">
               <p class="plan-level">Pack Premium</p>
@@ -328,7 +406,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <a href="#inicio" class="footer-brand">
-        <img src="media/logo.jpeg" alt="" width="64" height="64">
+        <picture>
+          <source srcset="media/logo.webp" type="image/webp">
+          <img src="media/logo.jpeg" alt="" width="64" height="64" loading="lazy" decoding="async">
+        </picture>
         <span>
           <strong>Emanuel Vázquez</strong>
           <small>Personal Trainer</small>
