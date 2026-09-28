@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.evpersonaltrainer.com.ar/sitemap.xml
+Sitemap: https://www.ev-personaltrainer.com/sitemap.xml
