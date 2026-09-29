@@ -39,6 +39,14 @@ document.querySelectorAll("[data-whatsapp]").forEach((link) => {
   link.href = whatsappUrl("¡Hola Emanuel! Quiero hacerte una consulta.");
 });
 
+document.querySelectorAll(".site-footer [data-whatsapp]").forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof gtag === "function") {
+      gtag('event', 'generate_lead', { origen: 'footer' });
+    }
+  });
+});
+
 // ---------- Año del footer ----------
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -248,6 +256,11 @@ form.addEventListener("submit", (e) => {
     `*Objetivo:* ${data.objetivo}`,
   ];
   if (data.aclaraciones.trim()) lines.push(`*Aclaraciones:* ${data.aclaraciones.trim()}`);
+
+  const objetivoElegido = data.objetivo;
+  if (typeof gtag === "function") {
+    gtag('event', 'generate_lead', { origen: 'formulario', objetivo: objetivoElegido });
+  }
 
   window.open(whatsappUrl(lines.join("\n")), "_blank", "noopener");
 });
